@@ -1,0 +1,34 @@
+{
+  "name": "commandbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "migrate": "npx knex migrate:latest --knexfile ./utils/knexfile.ts",
+    "seed-make": "npx knex seed:make dev --knexfile ./utils/knexfile.ts",
+    "seed": "npx knex seed:run --knexfile ./utils/knexfile.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.ts",
+    "down": "npx knex migrate:down --knexfile ./utils/knexfile.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commandbar": "^1.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.0",
+    "objection": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  }
+}
